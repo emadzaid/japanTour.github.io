@@ -1,1 +1,1 @@
-JapanTour is website that will make your experience in Japan a memorable.
+JapanTour is a website that will make your experience in Japan memorable.
