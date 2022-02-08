@@ -1,0 +1,66 @@
+.section-about
+
+{
+    padding: 15rem 0;
+    @include respond(tab-port)
+    {
+        padding: 15rem 0 8rem 0;
+    }
+
+}
+
+.section-tours
+
+{
+ 
+    padding: 0 0 15rem 0; // Top Left Bottom Right
+
+    @include respond(tab-port)
+    {
+        padding: 0 0 10rem 0;
+    }
+
+
+}
+
+.section-food
+
+{
+    padding: 0 0 20rem 0;
+
+    
+    @include respond(tab-port)
+    {
+        padding: 0 0 12rem 0;
+    }
+    
+}
+
+.section-story
+
+{
+    padding: 10rem 0;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/story-img.jpg);
+    @include setBackground;
+    background-attachment: fixed;  
+    filter: brightness(95%); 
+}
+
+.section-form
+
+{
+    padding: 15rem 0;
+
+}
+
+.form
+
+{
+  
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/form-img.jpg);
+    background-size: cover;
+    background-position: center;
+        
+}

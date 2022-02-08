@@ -1,0 +1,22 @@
+.composition
+{
+    @include respond(tab-port)
+    {
+        text-align: center;
+        
+    }
+    &__photo
+
+    {
+        width: 100%;
+        box-shadow: 0rem 1rem 2em rgba($color-black,.5);
+       // transform: scaleY(1.2);
+
+    //    @include respond(tab-port)
+    //    {
+    //        margin-top: 10rem;
+    //    }
+    
+       
+    }
+}

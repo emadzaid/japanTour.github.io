@@ -1,0 +1,68 @@
+@mixin abscenter {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+@mixin clearfix {
+
+    &::after {
+        
+    content: "";
+    display: table;
+    clear: both;
+    
+    }
+
+}
+
+@mixin setBackground {
+    
+    background-size: cover;
+    background-position: center;
+}
+
+// Meida Queries
+
+@mixin respond($breakpoint) {
+
+
+    @if $breakpoint == small-phone {
+
+        @media (max-width: 22.5em) {@content}; // width -> 360px
+
+    }
+
+
+    @if $breakpoint == phone {
+
+        @media (max-width: 37.5em) {@content}; // width -> 600px
+
+    }
+
+
+    @if $breakpoint == tab-port {
+
+        @media (max-width: 56.25em) {@content}; // width -> 900px
+
+    }
+
+
+    @if $breakpoint == tab-land {
+
+        @media (max-width: 75em) {@content}; // width -> 1200px
+
+    }
+
+    @if $breakpoint == big-desk {
+
+        @media (min-width: 112.5em) {@content}; // width -> 1800px
+
+    }
+
+    
+    
+}

@@ -1,0 +1,167 @@
+.navigation
+
+{
+    position: relative;
+    background-color:$color-dark-grey-1;
+    padding: 2rem 0;
+    @include respond(tab-port)
+    {
+        padding: 4rem 0
+    }
+    border-bottom: .5px solid $color-white;
+
+    
+
+    &__logo-box
+    {
+
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+        transform: translateY(-50%);
+    }
+
+    &__text
+
+    {
+        font-size: 3rem;
+    }
+
+    &__list
+
+    {
+        text-align: center;   
+    }
+
+    &__items
+
+    {
+        display: inline-block;
+
+        &:not(:last-child)
+        {
+            margin-right: 4rem;
+            
+        }
+
+        @include respond(tab-port)
+        {
+            display: none;            
+        }
+
+    }
+
+    &__links
+
+    {
+        &:link,
+        &:visited
+        {
+            text-decoration: none;
+            font-size: $default-font-size;
+            color: $color-white;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 2.2rem;
+            transition: all.5s;
+        }
+        
+        &:hover,
+        &:active
+        {
+            color: $color-yellowish;
+            border-bottom: 3px solid $color-yellowish;  
+
+        }
+
+    }
+
+}
+
+// --------- NAVBAR --------------
+
+
+.navbar--open
+{
+    right: 0 !important;
+    opacity: 1 !important;
+}
+.navbar
+
+{
+  
+    display: none;
+
+    @include respond(tab-port)
+    {
+        display: block; 
+    }
+    
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    width: 30rem;
+    height: 100%;
+    background-color: #525252;
+    z-index: 10;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+
+
+      &__links
+
+    {
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        padding: 2rem;
+        text-decoration: none;
+        font: 400;
+        font-size: 2rem;
+        border-bottom: 1px solid $color-dark-grey-1 ;
+        transition: all .3s;
+        &:active
+
+        {
+            background-color: $color-dark-grey-1 ;
+        }
+        
+    }
+
+    &__links .material-icons
+
+    {
+        margin-right: 1.2rem;
+    }
+
+    &__button
+
+    {
+        font-size: 2rem;
+        color: $color-white;
+        position: absolute;
+        top: 2.5rem;
+        right: 1rem;
+        background-color: transparent;
+        border: none;
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+        z-index: 50;
+        
+        @include respond(tab-port)
+        {
+           opacity: 1;
+           visibility: visible;
+        }
+    }
+
+    &__container
+
+    {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        
+    }
+}
+

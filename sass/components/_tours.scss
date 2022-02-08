@@ -1,0 +1,50 @@
+.tours
+
+{
+    text-align: center;
+
+    &__photo-container
+
+    {
+        position: relative;
+
+    }
+
+    &__photo
+
+    {
+  
+        width: 100%;
+        opacity: .9;
+        filter: brightness(60%);
+        display: inline-block;
+        transition: all .3s;
+        
+    }   
+    
+    &__photo-container:hover &__caption
+
+    {    
+        transform: translateY(-.5rem);
+    }
+
+    &__photo-container:hover &__photo
+
+    { 
+        filter: brightness(50%);
+    }
+    
+    &__caption
+
+    {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: all .4s;
+                
+    }
+}
+

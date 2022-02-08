@@ -1,0 +1,16 @@
+.header
+
+{
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../../img/hero-1.jpg);
+    @include setBackground;
+    position: relative;
+    background-attachment: fixed;
+
+    &__text-box
+
+    {
+        @include abscenter;
+    }
+   
+}

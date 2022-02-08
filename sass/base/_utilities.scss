@@ -1,0 +1,29 @@
+.center-text {text-align: center !important;}
+.left-text {text-align: left !important;}
+
+.margin-bottom-small {margin-bottom: 2rem !important;}
+.margin-bottom-med {margin-bottom: 4rem !important;}
+.margin-bottom-big {margin-bottom: 6rem !important;}
+.margin-bottom-huge {margin-bottom: 8rem !important;}
+
+@include respond(tab-port)
+{
+    .margin-bottom-small {margin-bottom: 4rem !important;}
+}
+
+
+.margin-top-big {margin-top: 6rem !important;}
+.margin-top-med {margin-top: 4rem !important;}
+.margin-top-huge {margin-top: 8rem !important;}
+.margin-top-huge-1 {margin-top: 15rem !important;}
+
+@include respond(small-phone)
+{
+    .margin-top-huge-1 {margin-top: 8rem !important;}
+    .margin-bottom-huge {margin-bottom: 5rem !important;}
+    
+}
+
+.margin-left-med {margin-left: 4rem !important;}
+
+

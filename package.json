@@ -1,0 +1,17 @@
+{
+  "name": "kuragari",
+  "version": "1.0.0",
+  "description": "Landing page for Kuragari",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Emad",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

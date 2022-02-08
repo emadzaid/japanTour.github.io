@@ -1,0 +1,44 @@
+.food
+{
+
+    @include respond(tab-port)
+    {
+        text-align: center;
+    }
+    &__photo
+
+    {
+        width: 100%;
+        box-shadow: 0rem 1rem 2em rgba($color-black,.5);
+    }
+}
+
+
+.food-composition
+
+{
+
+    &__photo
+
+    {
+        width: 30%;
+        margin: 1rem;
+        transition: all .2s;
+        filter: brightness(50%);
+
+        @include respond(tab-port)
+
+        {
+            width: 40%;
+        }
+       
+
+        &:hover
+        {
+            transform: scale(1.1);
+            filter: brightness(100%);
+           
+        }
+    }
+    
+}

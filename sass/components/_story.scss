@@ -1,0 +1,30 @@
+.story
+
+{
+    @include respond(tab-port)
+        {
+            text-align: center;
+        }
+
+    &__author-photo
+
+    {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 100rem;
+        vertical-align: middle;
+        border: 2px solid $color-orange;
+
+        
+    }
+
+    &__author-caption
+
+    {
+        margin-left: 1.5rem;
+        display: inline-block;
+        font-size: 2rem;
+        
+    }
+
+}
