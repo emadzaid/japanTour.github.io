@@ -482,7 +482,7 @@ body {
 
 .header {
   height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/xg_rampage_intro.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/hero-1.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
